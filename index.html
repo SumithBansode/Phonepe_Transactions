@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power BI Report Hosting</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: #f4f4f7;
+      color: #222;
+    }
+    .frame-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .notice {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 14px 16px;
+      background: #fffbe6;
+      color: #333;
+      border-bottom: 1px solid #e2d8ab;
+      box-sizing: border-box;
+      z-index: 10;
+    }
+    .notice a {
+      color: #1155cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">
+    Embedded Power BI report below. If it does not load, make sure the report is shared publicly or the embed settings allow viewing from this page.
+  </div>
+  <iframe
+    class="frame-container"
+    src="https://app.powerbi.com/view?r=eyJrIjoiMGQ5NDBhODItODRhMC00YWNjLWI5ZTYtNDNkOWUyYTU1OTU3IiwidCI6IjVmOTA5NjYwLWUxMDQtNDNkNC1hOGViLTA2YjNjNTkxYjBiMSJ9"
+    allowFullScreen
+    frameborder="0"
+    title="Power BI Report"
+  ></iframe>
+</body>
+</html>
